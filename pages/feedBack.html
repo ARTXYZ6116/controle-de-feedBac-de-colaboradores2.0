@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style/feedBack.css">
+  <title>FeedBack Colaborador</title>
+</head>
+<body>
+  <header>
+      <section class="header">
+        <div>
+          <h1>FeedBack</h1>
+        </div>
+      <nav>
+          <ul>
+            <li>
+              <a href="../index.html">Login</a>
+            </li>
+            <li>
+              <a href="../pages/register.html">Cadastro</a>
+            </li>
+            <li>
+              <a href="../pages/coordinator.html">RH</a>
+            </li>
+          </ul>
+      </nav>
+    </section>
+  </header>
+        <div class="container">
+          <h3>Adicionar </h3>
+            <input type="text" id="nome" placeholder="Nome do colaborador" />
+          <select id="tipo">
+            <option value="Positivo">Positivo</option>
+            <option value="Neutro">Neutro</option>
+            <option value="Negativo">Negativo</option>
+          </select>
+            <textarea id="comentario" placeholder="Escreva seu depoimento"></textarea>
+          <button onclick="addFeedback()">Salvar</button>
+        <hr />
+    </div>
+</body>
+</html>
